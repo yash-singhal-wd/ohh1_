@@ -262,10 +262,8 @@ int main(){
                 matrix[i][j] == 0 ? cout << "\033[1;34mX \033[0m":
                                     cout << "\033[1;33mX \033[0m";
             }
-            while(true){
-                cin.ignore();
-                break;
-            }
+            if(i==0) cout << endl;
+            cin.ignore();
         }
     } else {
         for(int i=0; i<n; ++i){
