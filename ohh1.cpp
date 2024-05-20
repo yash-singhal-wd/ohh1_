@@ -2,8 +2,6 @@
 
 using namespace std;
 
-//========================== Printing 2D Matrix =================================
-
 void adj_helper_each_row(vector<vector<int>> &matrix){
     int m = matrix.size();
     int n = matrix[0].size();
@@ -245,6 +243,5 @@ int main(){
         cout << endl;
     }
     // cout << "\033[1;34mbold red text\033[0m\n";
-    // print_answer_matrix_square(matrix);
     return 1;
 }
