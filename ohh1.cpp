@@ -253,11 +253,25 @@ int main(){
 
     solve_ohhi(matrix);
     cout << endl;
-    for(int i=0; i<n; ++i){
-        for(int j=0; j<n; ++j){
-            cout << matrix[i][j] << " ";
+    cout << "How do you wanna see the board?\n1.Row-wise\n2.Entire board\n";
+    int choice;
+    cin >> choice;
+    if(choice==1){
+        for(int i=0; i<n; ++i){
+            for(int j=0; j<n; ++j){
+                matrix[i][j] == 0 ? cout << "\033[1;34mX \033[0m":
+                                    cout << "\033[1;33mX \033[0m";
+            }
+            cin.ignore();
         }
-        cout << endl;
+    } else {
+        for(int i=0; i<n; ++i){
+            for(int j=0; j<n; ++j){
+                matrix[i][j] == 0 ? cout << "\033[1;34mX \033[0m":
+                                    cout << "\033[1;33mX \033[0m";
+            }
+            cout << endl;
+        }
     }
     // cout << "\033[1;34mbold red text\033[0m\n";
     return 1;
