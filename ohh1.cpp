@@ -222,12 +222,15 @@ void solve_ohhi(vector<vector<int>> &matrix){
 }
 
 int main(){
+    cout << "Welcome to Ohh1 solution generator!" << endl;
+    cout << "nxn matrix" << endl;
+    
     int n;
+    cout << "n: ";
     cin >> n;
-    cout << endl;
     vector<int> row(n,0);
     vector<vector<int>> matrix(n,row);
-
+    cout << "Input 0:\033[1;34mblue\033[0m, 1:\033[1;33myellow\033[0m and 2:\033[1;37mblank\033[0m." << endl;
     for(int i=0; i<n; ++i){
         for(int j=0; j<n; ++j){
             cin >> matrix[i][j];
