@@ -236,6 +236,20 @@ int main(){
             cin >> matrix[i][j];
         }
     }
+    cout << "Current board: " << endl;
+    for(int i=0; i<n; ++i){
+        for(int j=0; j<n; ++j){
+            if(matrix[i][j]==2)
+                cout << "- ";
+            else{
+                matrix[i][j] == 0 ? cout << "\033[1;34mo \033[0m" :
+                                    cout << "\033[1;33mo \033[0m";
+
+            }
+        }
+        cout << endl;
+    }
+    cout << endl;
 
     solve_ohhi(matrix);
     cout << endl;
